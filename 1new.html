@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srivinava Infra</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #002b5c;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.8em;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: #f5a623;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+      display: none; /* hidden by default */
+    }
+    .section h3 {
+      color: #002b5c;
+      margin-bottom: 20px;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-card h4 {
+      margin: 10px;
+      color: #002b5c;
+    }
+    .project-card p {
+      margin: 0 10px 15px;
+      font-size: 0.9em;
+    }
+    .contact-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .contact-card h3 {
+      color: #002b5c;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .contact-card p {
+      margin: 8px 0;
+      font-size: 1em;
+    }
+    .contact-card a {
+      color: #f5a623;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Modern_building_logo.png" alt="Logo">
+      Srivinava Infra
+    </h1>
+    <nav>
+      <a onclick="showSection('home')">Home</a>
+      <a onclick="showSection('about')">About Us</a>
+      <a onclick="showSection('services')">Services</a>
+      <a onclick="showSection('projects')">Projects</a>
+      <a onclick="showSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="hero section" style="display:block;">
+    <h2>Building Your Dreams</h2>
+    <p>Creating a Better Future with Excellence</p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h3>About Srivinava Infra</h3>
+    <p>We are a trusted construction company delivering quality projects across Telangana. 
+       Our expertise spans residential buildings, commercial complexes, and infrastructure development.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <h3>Our Services</h3>
+    <p>✔ Residential Construction<br>
+       ✔ Commercial Projects<br>
+       ✔ Road Development<br>
+       ✔ Infrastructure Solutions</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h3>Our Projects</h3>
+    <p>Successfully completed multiple projects including residential buildings and roads.</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://dollyhomes.com/wp-content/uploads/2022/06/Untitled-4.png" alt="Residential Building">
+        <h4>Residential Building</h4>
+        <p>Completed in Hasthinapuram</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1581090700227-4c4d1a3f3d3d" alt="Road Project">
+        <h4>Road Development</h4>
+        <p>Completed in Pedda Amberpet</p>
+      </div>
+      <div class="project-card">
+        <img src="https://i.pinimg.com/originals/62/2f/18/622f182312f57075a9ad5ebf8cd7c8d6.jpg" alt="Commercial Building">
+        <h4>Commercial Complex</h4>
+        <p>Completed in Shadnagar</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="Infrastructure Project">
+        <h4>Infrastructure Development</h4>
+        <p>Completed in Ragannaguda</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="contact-card">
+      <h3>Contact Us</h3>
+      <p><strong>Name:</strong> Rakesh Reddy</p>
+      <p><strong>Phone:</strong> <a href="tel:9553601687">9553601687</a></p>
+      <p><strong>Email:</strong> info@srivinavainfra.com</p>
+      <p><strong>Address:</strong> Hasthinapuram</p>
+      <p><strong>Google Maps:</strong> 
+        <a href="https://www.bing.com/maps/search?mepi=0~~Embedded~Address_Link&ty=18&v=2&sV=1&FORM=MPSRPL&q=Srujana+Elite&ss=id.ypid%3AYN4A8F05AA49D50161&ppois=17.322265625_78.54671478271484_Srujana+Elite_YN4A8F05AA49D50161~&cp=17.322266~78.546715&lvl=11&style=r" target="_blank">
+          View Location on Map
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Srivinava Infra. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
