@@ -180,6 +180,17 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .map-container {
+      margin-top: 25px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
     footer {
       background-color: #002b5c;
       color: white;
@@ -249,6 +260,9 @@
       .contact-card {
         padding: 20px;
       }
+      .map-container iframe {
+        height: 250px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -289,6 +303,9 @@
       }
       .contact-card p {
         font-size: 0.9em;
+      }
+      .map-container iframe {
+        height: 200px;
       }
     }
   </style>
@@ -372,11 +389,10 @@
       <p><strong>Phone:</strong> <a href="tel:9553601687">9553601687</a></p>
       <p><strong>Email:</strong> <a href="mailto:info@srivinavainfra.com">info@srivinavainfra.com</a></p>
       <p><strong>Address:</strong> Hasthinapuram</p>
-      <p><strong>Google Maps:</strong> 
-        <a href="https://www.bing.com/maps/search?mepi=0~~Embedded~Address_Link&ty=18&v=2&sV=1&FORM=MPSRPL&q=Srujana+Elite&ss=id.ypid%3AYN4A8F05AA49D50161&ppois=17.322265625_78.54671478271484_Sru" target="_blank">
-          View Location on Map
-        </a>
-      </p>
+      
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.7234567890!2d78.5467!3d17.3223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93a1234567%3A0x1234567890abcdef!2sHasthinapuram!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </section>
 
